@@ -1,0 +1,28 @@
+# Build çıktıları
+bin/
+obj/
+
+# Paketler
+packages/
+
+# Kullanıcıya özel dosyalar
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Log dosyaları
+*.log
+
+# Derlenmiş dosyalar
+*.dll
+*.exe
+
+# IDE ayarları
+.vs/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db

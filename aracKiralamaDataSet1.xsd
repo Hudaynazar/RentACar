@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="aracKiralamaDataSet1" targetNamespace="http://tempuri.org/aracKiralamaDataSet1.xsd" xmlns:mstns="http://tempuri.org/aracKiralamaDataSet1.xsd" xmlns="http://tempuri.org/aracKiralamaDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="aracKiralamaConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="aracKiralamaConnectionString (Settings)" PropertyReference="ApplicationSettings.AraçKiralama.Properties.Settings.GlobalReference.Default.aracKiralamaConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="aracBilgiTableAdapter" GeneratorDataComponentClassName="aracBilgiTableAdapter" Name="aracBilgi" UserDataComponentName="aracBilgiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="aracKiralamaConnectionString (Settings)" DbObjectName="aracBilgi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT plaka, marka, model, yil, yakit, vites, km, kapi, kasaTipi, renk, hasar, aracFoto, musait, hasarFoto FROM aracBilgi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="kiraSozlesmeTableAdapter" GeneratorDataComponentClassName="kiraSozlesmeTableAdapter" Name="kiraSozlesme" UserDataComponentName="kiraSozlesmeTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="aracKiralamaConnectionString (Settings)" DbObjectName="kiraSozlesme" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT alisTarih, teslimTarih, tutar, kapora, sozlesme, tcNo, plaka, id FROM kiraSozlesme</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="musteriBilgiTableAdapter" GeneratorDataComponentClassName="musteriBilgiTableAdapter" Name="musteriBilgi" UserDataComponentName="musteriBilgiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="aracKiralamaConnectionString (Settings)" DbObjectName="musteriBilgi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT tcNo, isim, soyisim, dogumTarihi, meslek, cepTelefonu, mail, adres, ehliyet, notlar, musteriFoto FROM musteriBilgi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="aracKiralamaDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="aracKiralamaDataSet1" msprop:Generator_DataSetName="aracKiralamaDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="aracBilgi" msprop:Generator_RowEvHandlerName="aracBilgiRowChangeEventHandler" msprop:Generator_RowDeletedName="aracBilgiRowDeleted" msprop:Generator_RowDeletingName="aracBilgiRowDeleting" msprop:Generator_RowEvArgName="aracBilgiRowChangeEvent" msprop:Generator_TablePropName="aracBilgi" msprop:Generator_RowChangedName="aracBilgiRowChanged" msprop:Generator_RowChangingName="aracBilgiRowChanging" msprop:Generator_TableClassName="aracBilgiDataTable" msprop:Generator_RowClassName="aracBilgiRow" msprop:Generator_TableVarName="tablearacBilgi" msprop:Generator_UserTableName="aracBilgi">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="kiraSozlesme" msprop:Generator_RowEvHandlerName="kiraSozlesmeRowChangeEventHandler" msprop:Generator_RowDeletedName="kiraSozlesmeRowDeleted" msprop:Generator_RowDeletingName="kiraSozlesmeRowDeleting" msprop:Generator_RowEvArgName="kiraSozlesmeRowChangeEvent" msprop:Generator_TablePropName="kiraSozlesme" msprop:Generator_RowChangedName="kiraSozlesmeRowChanged" msprop:Generator_RowChangingName="kiraSozlesmeRowChanging" msprop:Generator_TableClassName="kiraSozlesmeDataTable" msprop:Generator_RowClassName="kiraSozlesmeRow" msprop:Generator_TableVarName="tablekiraSozlesme" msprop:Generator_UserTableName="kiraSozlesme">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="musteriBilgi" msprop:Generator_RowEvHandlerName="musteriBilgiRowChangeEventHandler" msprop:Generator_RowDeletedName="musteriBilgiRowDeleted" msprop:Generator_RowDeletingName="musteriBilgiRowDeleting" msprop:Generator_RowEvArgName="musteriBilgiRowChangeEvent" msprop:Generator_TablePropName="musteriBilgi" msprop:Generator_RowChangedName="musteriBilgiRowChanged" msprop:Generator_RowChangingName="musteriBilgiRowChanging" msprop:Generator_TableClassName="musteriBilgiDataTable" msprop:Generator_RowClassName="musteriBilgiRow" msprop:Generator_TableVarName="tablemusteriBilgi" msprop:Generator_UserTableName="musteriBilgi">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
